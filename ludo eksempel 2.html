@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ludo2</title>
+</head>
+	<style>
+		body {
+            background-color: lightblue;
+        }
+        @media only screen and (min-aspect-ratio: 1/1) {
+            svg {
+                height: 95vh;
+            }
+        }
+        @media only screen and (max-aspect-ratio: 1/1) {
+            svg {
+                width: 95vw;
+            }
+        }
+		viewbox {
+			align: center;
+		}
+
+        rect.board {
+            stroke: black;
+            stroke-width: 2px;
+            fill: white;
+        }
+        rect.part {
+            stroke: black;
+            stroke-width: 1px;
+            fill: transparent;
+        }
+        rect.square {
+            fill: white;
+            stroke: black;
+			stroke-width: 0.2px;
+        }
+        rect.red {
+            fill: red;
+            stroke: black;
+        }
+		rect.blue {
+			fill: blue;
+			stroke: black;
+		}
+		rect.green {
+			fill: green;
+			stroke: black;
+		}
+		rect.yellow {
+			fill: yellow;
+			stroke: black;
+		}
+        circle.circle {
+            stroke: black;
+        }
+        circle.blue {
+            fill: blue;
+        }
+        circle.white {
+            fill: white;
+        }
+		circle.red {
+			fill: red
+		}
+		circle.green {
+			fill: green;
+		}
+		circle.yellow {
+			fill: yellow;
+		}
+        polygon.red {
+            stroke: black;
+            stroke-width: 0.2px;
+            fill: red;
+        }
+		polygon.blue {
+            stroke: black;
+            stroke-width: 0.2px;
+            fill: blue;
+        }
+		polygon.green {
+            stroke: black;
+            stroke-width: 0.2px;
+            fill: green;
+        }
+		polygon.yellow {
+            stroke: black;
+            stroke-width: 0.2px;
+            fill: yellow;
+        }     
+		rect {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: white;
+            }
+	</style>
+<body>
+	<svg viewbox="0 0 100 100">
+        <rect class="board" width="100" height="100" />
+
+		<!-- Rad 1 fra venstre -->
+        <rect class="square" x="34" y="1.5" width="10" height="10" />
+        <rect class="square" x="34" y="12.5" width="10" height="10" />
+        <rect class="square" x="34" y="23.5" width="10" height="10" />
+		
+
+		<!-- Rad 2 fra venstre -->
+		<rect class="red square" x="45" y="1.5" width="10" height="10" />
+		<rect class="red square" x="45" y="12.5" width="10" height="10" />
+		<rect class="red square" x="45" y="23.5" width="10" height="10" />
+
+		<!-- Rad 3 fra venstre -->
+		<rect class="red square" x="56" y="1.5" width="10" height="10" />
+		<rect class="square" x="56" y="12.5" width="10" height="10" />
+		<rect class="square" x="56" y="23.5" width="10" height="10" />
+
+		<!-- Rad 1 fra toppen til venstre -->
+		<rect class="yellow square" x="1.5" y="34" width="10" height="10" />
+		<rect class="square" x="12.5" y="34" width="10" height="10" />
+		<rect class="square" x="23.5" y="34" width="10" height="10" />
+
+		<!-- Rad 2 fra toppen til venstre -->
+		<rect class="yellow square" x="1.5" y="45" width="10" height="10" />
+		<rect class="yellow square" x="12.5" y="45" width="10" height="10" />
+		<rect class="yellow square" x="23.5" y="45" width="10" height="10" />
+
+		<!-- Rad 3 fra toppen til venstre -->
+		<rect class="square" x="1.5" y="56" width="10" height="10" />
+		<rect class="square" x="12.5" y="56" width="10" height="10" />
+		<rect class="square" x="23.5" y="56" width="10" height="10" />
+
+		<!-- Rad 1 fra venstre på bunnen -->
+		<rect class="square" x="34" y="66.5" width="10" height="10" />
+		<rect class="square" x="34" y="77.5" width="10" height="10" />
+		<rect class="green square" x="34" y="88.5" width="10" height="10" />
+
+		<!-- Rad 2 fra venstre på bunnen -->
+		<rect class="green square" x="45" y="66.5" width="10" height="10" />
+		<rect class="green square" x="45" y="77.5" width="10" height="10" />
+		<rect class="green square" x="45" y="88.5" width="10" height="10" />
+
+		<!-- Rad 3 fra venstre på bunnen -->
+		<rect class="square" x="56" y="66.5" width="10" height="10" />
+		<rect class="square" x="56" y="77.5" width="10" height="10" />
+		<rect class="square" x="56" y="88.5" width="10" height="10" />
+
+		<!-- Rad 1 fra toppen til høyre -->
+		<rect class="square" x="66.5" y="34" width="10" height="10" />
+		<rect class="square" x="77.5" y="34" width="10" height="10" />
+		<rect class="square" x="88.5" y="34" width="10" height="10" />
+
+		<!-- Rad 2 fra toppen til høyre -->
+		<rect class="blue square" x="66.5" y="45" width="10" height="10" />
+		<rect class="blue square" x="77.5" y="45" width="10" height="10" />
+		<rect class="blue square" x="88.5" y="45" width="10" height="10" />
+
+		<!-- Rad 3 fra toppen til høyre -->
+		<rect class="square" x="66.5" y="56" width="10" height="10" />
+		<rect class="square" x="77.5" y="56" width="10" height="10" />
+		<rect class="blue square" x="88.5" y="56" width="10" height="10" />
+
+		<!-- Plassen til brikkene -->
+		<rect class="yellow" x="1.7" y="1.7" width="31" height="30" />
+            <rect x="5.5" y="5.5" width ="22" height="22" />
+
+            <rect class="red" x="68.3" y="1.7" width="31" height="30" />
+            <rect x="72.5" y="5.5" width="22" height="22"/>
+
+            <rect class="blue" x="68.3" y="68.3" width="31" height="30" />
+            <rect x="72.5" y="72.5" width="22" height="22"/>
+
+            <rect class="green" x="1.7" y="68.3" width="31" height="30" />
+            <rect x="5.5" y="72.5" width="22" height="22"/>
+
+		<!-- Mål merkene -->
+		<polygon class="red" points="48.5,48.5,65,34,35,34" />
+		<polygon class="green" points="48.5,50,34.5,65.5,64,65.5" />
+		<polygon class="yellow" points="34.5,35,34.5,63.5,47.5,49" />
+		<polygon class="blue" points="49.5,49.5,65.5,65,65.5,35" />
+
+		<!-- Bokstaver -->
+
+		<!-- Røde siden -->
+		<text x="37" y="8" font-family="sans-serif" font-size="6px" fill="black">A</text>
+		<text x="37" y="19" font-family="sans-serif" font-size="6px" fill="black">M</text>
+		<text x="37" y="30" font-family="sans-serif" font-size="6px" fill="black">I</text>
+
+		<text x="59" y="19" font-family="sans-serif" font-size="6px" fill="black">L</text>
+		<text x="59" y="30" font-family="sans-serif" font-size="6px" fill="black">S</text>
+
+		<!-- Blå siden -->
+		<text x="70" y="41" font-family="sans-serif" font-size="6px" fill="black">K</text>
+		<text x="81" y="41" font-family="sans-serif" font-size="6px" fill="black">O</text>
+		<text x="92" y="41" font-family="sans-serif" font-size="6px" fill="black">R</text>
+
+		<text x="70" y="63" font-family="sans-serif" font-size="6px" fill="black">D</text>
+		<text x="81" y="63" font-family="sans-serif" font-size="6px" fill="black">U</text>
+
+		<!-- Grønne siden -->
+		<text x="59" y="74" font-family="sans-serif" font-size="6px" fill="black">E</text>
+		<text x="59" y="85" font-family="sans-serif" font-size="6px" fill="black">H</text>
+		<text x="59" y="96" font-family="sans-serif" font-size="6px" fill="black">J</text>
+
+		<text x="37" y="74" font-family="sans-serif" font-size="6px" fill="black">V</text>
+		<text x="37" y="85" font-family="sans-serif" font-size="6px" fill="black">N</text>
+
+		<!-- Gule siden -->
+		<text x="26" y="63" font-family="sans-serif" font-size="6px" fill="black">T</text>
+		<text x="15" y="63" font-family="sans-serif" font-size="6px" fill="black">P</text>
+		<text x="4" y="63" font-family="sans-serif" font-size="6px" fill="black">F</text>
+
+		<text x="15" y="41" font-family="sans-serif" font-size="6px" fill="black">B</text>
+		<text x="26" y="41" font-family="sans-serif" font-size="6px" fill="black">G</text>
+
+		
+
+</body>
+</html>
