@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            rect {
+                stroke: black;
+                stroke-width: 0.5px;
+                fill: white;
+            }
+            
+            rect.cell {
+                stroke: black;
+                stroke-width: 0.5px;
+            }
+            rect.yellow {
+                fill: yellow;
+            }
+            rect.blue {
+                fill: blue;
+            }
+            rect.green {
+                fill: green;
+            }
+            rect.red {
+                fill: red;
+            }
+            polygon.yellow{
+                fill: yellow;
+            }
+            polygon.blue{
+                fill: blue;
+            }
+            polygon.red{
+                fill: red;
+            }
+            polygon.green{
+                fill: green;
+            }
+            
+
+            @media only screen and (min-aspect-ratio: 1/1) {
+                svg {
+                    height: 95vh;
+                }
+            }
+            @media only screen and (max-aspect-ratio: 1/1) {
+                svg {
+                    width: 95vw;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <svg viewbox="0 0 100 100">
+            <rect class="backg" width="100" height="100"/>
+
+            <!--3*3 på toppen-->
+            <rect class="red" x="44.5" width="11" height="11"/>
+            <rect class="red" y="11" x="44.5" width="11" height="11"/>
+            <rect class="red" y="22" x="44.5" width="11" height="11"/>
+
+            <rect class="red" x="55.5" width="11" height="11"/>
+            <rect class="cell" y="11" x="55.5" width="11" height="11"/>
+            <rect class="cell" y="22" x="55.5" width="11" height="11"/>
+            
+            <rect class="cell" x="33.5" width="11" height="11"/>
+            <rect class="cell" y="11" x="33.5" width="11" height="11"/>
+            <rect class="cell" y="22" x="33.5" width="11" height="11"/>
+            <!--3*3 på toppen-->
+            
+            <!--3*3 på bunnen-->
+            <rect class="green" y="89" x="44.5" width="11" height="11"/>
+            <rect class="green" y="78" x="44.5" width="11" height="11"/>
+            <rect class="green" y="67" x="44.5" width="11" height="11"/>
+            
+            <rect class="green" y="89" x="33.5" width="11" height="11"/>
+            <rect class="cell" y="78" x="33.5" width="11" height="11"/>
+            <rect class="cell" y="67" x="33.5" width="11" height="11"/>
+            
+            <rect class="cell" y="89" x="55.5" width="11" height="11"/>
+            <rect class="cell" y="78" x="55.5" width="11" height="11"/>
+            <rect class="cell" y="67" x="55.5" width="11" height="11"/>
+            <!--3*3 på bunnen-->
+
+            <!--3*3 på venstre-->
+            <rect class="yellow" y="44.5" width="11" height="11"/>
+            <rect class="yellow" y="44.5" x="11" width="11" height="11"/>
+            <rect class="yellow" y="44.5" x="22" width="11" height="11"/>
+
+            <rect class="yellow" y="33.5" width="11" height="11"/>
+            <rect class="cell" y="33.5" x="11" width="11" height="11"/>
+            <rect class="cell" y="33.5" x="22" width="11" height="11"/>
+
+            <rect class="cell" y="55.5" width="11" height="11"/>
+            <rect class="cell" y="55.5" x="11" width="11" height="11"/>
+            <rect class="cell" y="55.5" x="22" width="11" height="11"/>
+            <!--3*3 på venstre-->
+
+            <!--3*3 på høyre-->
+            <rect class="blue" y="44.5" x="89" width="11" height="11"/>
+            <rect class="blue" y="44.5" x="78" width="11" height="11"/>
+            <rect class="blue" y="44.5" x="67" width="11" height="11"/>
+            
+            <rect class="cell" y="33.5" x="89" width="11" height="11"/>
+            <rect class="cell" y="33.5" x="78" width="11" height="11"/>
+            <rect class="cell" y="33.5" x="67" width="11" height="11"/>
+            
+            <rect class="blue" y="55.5" x="89" width="11" height="11"/>
+            <rect class="cell" y="55.5" x="78" width="11" height="11"/>
+            <rect class="cell" y="55.5" x="67" width="11" height="11"/>
+            <!--3*3 på høyre-->
+
+
+            <rect class="yellow" x="1.7" y="1.7" width="30" height="30" />
+            <rect x="5.5" y="5.5" width ="22" height="22" />
+
+            <rect class="red" x="68.3" y="1.7" width="30" height="30" />
+            <rect x="72.5" y="5.5" width="22" height="22"/>
+
+            <rect class="blue" x="68.3" y="68.3" width="30" height="30" />
+            <rect x="72.5" y="72.5" width="22" height="22"/>
+
+            <rect class="green" x="1.7" y="68.3" width="30" height="30" />
+            <rect x="5.5" y="72.5" width="22" height="22"/>
+            
+
+            <polygon class="yellow" points="50,50 34,34 34,66 "/>
+            <polygon class="blue" points="50,50 66,66 66,34 "/>
+            <polygon class ="red" points="50,50 34,34 66,34" />
+            <polygon class ="green" points="50,50 66,66 34,66" />
+
+        </svg>
+    </body>
+</html>
