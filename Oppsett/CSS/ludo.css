@@ -1,0 +1,99 @@
+﻿body {
+    background-color: lightgray;
+}
+
+            @media only screen and (min-aspect-ratio: 1/1) {
+                svg {
+                    height: 95vh;
+                }
+            }
+            @media only screen and (max-aspect-ratio: 1/1) {
+                svg {
+                    width: 95vw;
+                }
+            }
+
+            rect.background {
+                stroke: black;
+                stroke-width: 1px;
+                fill: white;
+            }
+
+            rect.whiteBlock {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: white;
+            }
+            rect.homeYellow {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: yellow;
+            }
+            rect.homeRed {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: red;
+            }
+            rect.homeGreen {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: green;
+            }
+
+            rect.homeBlue {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: blue;
+            }
+
+            rect.whiteSquare {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: white;
+            }
+            rect.yellowSquare {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: yellow;
+            }
+            rect.redSquare {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: red;
+            }
+            rect.greenSquare {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: green;
+            }
+            rect.blueSquare {
+                stroke: black;
+                stroke-width: 0.2px;
+                fill: blue;
+            }
+            rect.spaceforsquares{
+                stroke:black;
+                stroke-width: 0.2px;
+                fill-opacity: 0.1
+
+            }
+            polygon.redTriangle{
+                stroke:black;
+                stroke-width: 0.2px;
+                fill: red;
+            }
+            polygon.yellowTriangle{
+                stroke:black;
+                stroke-width: 0.2px;
+                fill: yellow;
+                }
+            polygon.greenTriangle{
+                stroke:black;
+                stroke-width: 0.2px;
+                fill: green;
+                }
+            polygon.blueTriangle{
+                stroke:black;
+                stroke-width: 0.2px;
+                fill: blue;
+                }
