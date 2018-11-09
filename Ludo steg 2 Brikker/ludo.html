@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ludo2</title>
+    <link rel="stylesheet" href="CSS/ludo.css"/>
+    <script src="JS/showBoard1.js"></script>
+    <script src="JS/showBoard2.js"></script>
+    <script src="JS/showBoard3.js"></script>
+    <script src="JS/showHelp.js"></script>
+</head>
+<body>
+    <div style="padding-bottom: 20px">
+        <b>Meny</b><br />
+        <button onclick="showHelp()">Hjelp</button>
+        <button onclick="showBoard1()">Lett</button>
+        <button onclick="showBoard2()">Middels</button>
+        <button onclick="showBoard3()">Vanskelig</button>
+        <br>
+        <button onclick="nextYellow(0)">Flytt gul1 +1</button>
+        <button onclick="nextYellow(1)">Flytt gul2 +1</button>
+        <button onclick="nextYellow(2)">Flytt gul3 +1</button>
+        <button onclick="nextYellow(3)">Flytt gul4 +1</button>
+        <button onclick="nextRed(0)">Flytt rød1 +1</button>
+        <button onclick="nextRed(1)">Flytt rød2 +1</button>
+        <button onclick="nextRed(2)">Flytt rød3 +1</button>
+        <button onclick="nextRed(3)">Flytt rød4 +1</button>
+        <button onclick="nextBlue(0)">Flytt blå1 +1</button>
+        <button onclick="nextBlue(1)">Flytt blå2 +1</button>
+        <button onclick="nextBlue(2)">Flytt blå3 +1</button>
+        <button onclick="nextBlue(3)">Flytt blå4 +1</button>
+        <button onclick="nextGreen(0)">Flytt grønn1 +1</button>
+        <button onclick="nextGreen(1)">Flytt grønn2 +1</button>
+        <button onclick="nextGreen(2)">Flytt grønn3 +1</button>
+        <button onclick="nextGreen(3)">Flytt grønn4 +1</button>
+        <br>
+        col: <span id="colOut"></span> <input id="col" type="range" min="1" max="9" step="0.5" oninput="movePieceWithSlider()"/> 
+        row: <span id="rowOut"></span> <input id="row" type="range" min="1" max="9" step="0.5" oninput="movePieceWithSlider()"/> 
+    </div>
+    <div id="board">
+    </div>
+</body>
+</html>
